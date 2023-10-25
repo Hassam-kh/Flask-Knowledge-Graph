@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 2px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+<body>
+  {% for table in tables %}
+            {{ table|safe }}
+  {% endfor %}
+
+<!-- <table>
+  <tr>
+    <th>Subject</th>
+    <th>Predicate</th>
+    <th>Object</th>
+  </tr>
+  <tr>
+    {% for i in data %}
+    <tr>
+        {% for j in i %}
+            <td>{{j}}</td>
+        {% endfor %}  
+    </tr> 
+    {% endfor %}
+  </tr>
+</table> -->
+</body>
+</html>
+

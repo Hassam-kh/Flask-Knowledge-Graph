@@ -1,0 +1,4 @@
+You can just write some static data , exact copy paste
+python -m flask run
+venv\Scripts\activate
+deactivate
